@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.opskitty/mcp",
+  "title": "OpsKitty",
+  "description": "Uptime checks for sites and APIs, status pages, cron heartbeats, Lighthouse and SEO audits.",
+  "websiteUrl": "https://www.opskitty.com",
+  "version": "0.1.0",
+  "icons": [
+    {
+      "src": "https://www.opskitty.com/logo.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "256x256"
+      ]
+    },
+    {
+      "src": "https://www.opskitty.com/apple-touch-icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "180x180"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.opskitty.com/mcp"
+    }
+  ]
+}
