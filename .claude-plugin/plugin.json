@@ -10,8 +10,19 @@
   "homepage": "https://www.opskitty.com/docs",
   "repository": "https://github.com/capaxelabs/opskitty-mcp",
   "license": "MIT",
-  "keywords": ["mcp", "uptime", "monitoring", "status-page", "heartbeat", "cron", "lighthouse", "seo"],
+  "keywords": [
+    "mcp",
+    "uptime",
+    "monitoring",
+    "status-page",
+    "heartbeat",
+    "cron",
+    "lighthouse",
+    "seo"
+  ],
   "icon": "./assets/logo.png",
   "documentationUrl": "https://www.opskitty.com/docs",
-  "supportUrl": "https://www.opskitty.com/contact"
+  "supportUrl": "https://www.opskitty.com/contact",
+  "privacyPolicyUrl": "https://www.opskitty.com/pages/privacy",
+  "termsOfServiceUrl": "https://www.opskitty.com/pages/tos"
 }

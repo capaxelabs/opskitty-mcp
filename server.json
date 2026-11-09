@@ -4,7 +4,11 @@
   "title": "OpsKitty",
   "description": "Uptime checks for sites and APIs, status pages, cron heartbeats, Lighthouse and SEO audits.",
   "websiteUrl": "https://www.opskitty.com",
-  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/capaxelabs/opskitty-mcp",
+    "source": "github"
+  },
+  "version": "0.1.1",
   "icons": [
     {
       "src": "https://www.opskitty.com/logo.png",

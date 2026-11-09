@@ -1,0 +1,32 @@
+{
+  "name": "opskitty",
+  "displayName": "OpsKitty",
+  "version": "1.0.0",
+  "description": "Uptime checks for sites and APIs, status pages, cron heartbeats, Lighthouse and SEO audits.",
+  "author": {
+    "name": "Capaxe Labs"
+  },
+  "publisher": "Capaxe Labs",
+  "homepage": "https://www.opskitty.com",
+  "repository": "https://github.com/capaxelabs/opskitty-mcp",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "mcp",
+    "uptime",
+    "monitoring",
+    "status-page",
+    "heartbeat",
+    "cron",
+    "lighthouse",
+    "seo"
+  ],
+  "category": "integrations",
+  "tags": [
+    "monitoring",
+    "uptime",
+    "seo",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json"
+}

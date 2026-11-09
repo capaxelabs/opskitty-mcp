@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "opskitty",
+  "version": "1.0.0",
+  "description": "Uptime checks for sites and APIs, status pages, cron heartbeats, Lighthouse and SEO audits.",
+  "author": {
+    "name": "Capaxe Labs",
+    "url": "https://www.opskitty.com"
+  },
+  "homepage": "https://www.opskitty.com/docs",
+  "repository": "https://github.com/capaxelabs/opskitty-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "uptime",
+    "monitoring",
+    "status-page",
+    "heartbeat",
+    "cron",
+    "lighthouse",
+    "seo"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "OpsKitty",
+        "shortDescription": "Uptime, status pages and SEO audits",
+        "longDescription": "Set up monitoring by asking for it. Watch sites and API endpoints, get Slack or email alerts, publish a status page, track cron jobs with heartbeats, and run Lighthouse and SEO audits.",
+        "developerName": "Capaxe Labs",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://www.opskitty.com",
+        "privacyPolicyURL": "https://www.opskitty.com/pages/privacy",
+        "termsOfServiceURL": "https://www.opskitty.com/pages/tos",
+        "supportURL": "https://www.opskitty.com/contact",
+        "defaultPrompt": [
+          "Monitor my site every minute and alert me on Slack if it goes down",
+          "Create a public status page for my API",
+          "Run Lighthouse on my homepage and list the top fixes"
+        ],
+        "brandColor": "#FD5801",
+        "composerIcon": "./assets/logo.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

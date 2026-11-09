@@ -11,9 +11,14 @@
   <a href="https://registry.modelcontextprotocol.io/v0.1/servers?search=com.opskitty">MCP Registry</a>
 </p>
 
+<p align="center">
+  <a href="https://cursor.com/en/install-mcp?name=opskitty&config=eyJ1cmwiOiJodHRwczovL21jcC5vcHNraXR0eS5jb20vbWNwIn0="><img src="https://cursor.com/deeplink/mcp-install-dark.svg" alt="Add OpsKitty to Cursor" height="32"></a>
+  <a href="https://vscode.dev/redirect/mcp/install?name=opskitty&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.opskitty.com%2Fmcp%22%7D"><img src="https://img.shields.io/badge/VS_Code-Install_server-0098FF?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="Install OpsKitty in VS Code" height="32"></a>
+</p>
+
 OpsKitty is a hosted MCP server at `https://mcp.opskitty.com/mcp`. Connect it to Claude, ChatGPT, Cursor or any MCP client and set up monitoring by asking for it, instead of clicking through a dashboard.
 
-This repo holds the install files for Claude Code, Cursor and other clients. The server itself is hosted by OpsKitty, so there is nothing to run.
+This repo holds the install files for Claude Code, Codex, Cursor and other clients. The server itself is hosted by OpsKitty, so there is nothing to run.
 
 ## What you can ask
 
@@ -52,9 +57,22 @@ claude mcp add --transport http opskitty https://mcp.opskitty.com/mcp
 2. In **Apps & Connectors**, select **Create**.
 3. Name it **OpsKitty**, paste `https://mcp.opskitty.com/mcp` and choose **OAuth**.
 
+### Codex
+
+```bash
+codex plugin marketplace add capaxelabs/plugins
+codex plugin add opskitty@capaxe
+```
+
+Or add it as a plain MCP server:
+
+```bash
+codex mcp add opskitty --url https://mcp.opskitty.com/mcp
+```
+
 ### Cursor
 
-Add to `~/.cursor/mcp.json`:
+Use the **Add to Cursor** button above, or add to `~/.cursor/mcp.json`:
 
 ```json
 {
@@ -66,7 +84,7 @@ Add to `~/.cursor/mcp.json`:
 
 ### VS Code
 
-Add to `.vscode/mcp.json`:
+Use the **Install** button above, or add to `.vscode/mcp.json`:
 
 ```json
 {
@@ -105,8 +123,20 @@ Tools that change or delete things are marked as such, so your AI app asks befor
 - Website: https://www.opskitty.com
 - Docs: https://www.opskitty.com/docs
 - Pricing: https://www.opskitty.com/pricing
+- Privacy: https://www.opskitty.com/pages/privacy
+- Terms: https://www.opskitty.com/pages/tos
 - Support: https://www.opskitty.com/contact
+
+## Files in this repo
+
+| File | Read by |
+| --- | --- |
+| `.claude-plugin/plugin.json`, `.mcp.json` | Claude Code |
+| `plugin.json`, `mcp.json` | Codex and other [Agent Plugins](https://agent-plugins.org) clients |
+| `.cursor-plugin/plugin.json` | Cursor |
+| `server.json` | [Official MCP Registry](https://registry.modelcontextprotocol.io) |
+| `glama.json` | [Glama](https://glama.ai/mcp/servers) |
 
 ## License
 
-The files in this repo are MIT licensed. Use of the OpsKitty service is covered by its own terms.
+The files in this repo are MIT licensed. Use of the OpsKitty service is covered by its [terms](https://www.opskitty.com/pages/tos).
